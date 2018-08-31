@@ -1,0 +1,77 @@
+
+.player-hands {
+  margin-top: 7rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.player-cards {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 2rem 0rem 1rem 0;
+  position: relative;
+  text-align: center;
+  width: 49%;
+}
+
+.player-cards.img {
+  width: 100%;
+  z-index: -1;
+}
+
+.player-score {
+  background: rgba(0,0,0,0.75);
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: -1.2rem;
+  padding: 1rem;
+  position: relative;
+  width: 6rem;
+}
+
+.player-arrow {
+  background: rgba(0,0,0,0.75);
+  position: absolute;
+  right: 12%;
+  top: 35%;
+  width: 5rem;
+}
+.fa-angle-left {
+  color: gold;
+  font-size: 4rem;
+}
+
+
+.player-cards .card {
+  box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.5);
+  width: 11rem;
+}
+.player-cards .card:not(:first-child) {
+  margin-left: -9rem;
+}
+
+
+@media (max-width: 900px) {
+  .player-cards .card {
+    width: 9rem;
+  }
+  .player-cards .card:not(:first-child) {
+    margin-left: -7.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .player-hands {
+    margin-top: 3rem;
+  }
+  .player-cards .card {
+    width: 7.5rem;
+  }
+  .player-cards .card:not(:first-child) {
+    margin-left: -6rem;
+  }
+}

@@ -1,0 +1,50 @@
+.game-status {
+  cursor: pointer;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 10;
+}
+
+.game-status-box {
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 21rem;
+  width: 50%;
+}
+
+.game-status-text {
+  background: rgba(0,0,0,0.75);
+  box-sizing: border-box;
+  color: gold;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .game-status-box {
+    margin-top: 18rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .game-status-box {
+    margin-top: 19rem;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .game-status-box {
+    margin-top: 15.5rem;
+  }
+  .game-status-text {
+    font-size: 2rem;
+  }
+}

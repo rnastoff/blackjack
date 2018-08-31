@@ -1,0 +1,26 @@
+.container {
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  max-width: 100%;
+  top: 26%;
+  width: 100%;
+}
+.container-position {
+  margin: 0 auto;
+  width: 60%;
+}
+
+@media (max-width: 900px ) {
+  .container {
+    top: 20%
+  }
+  .container-position {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px ) {
+  .container {
+    top: 16%
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "blackjack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev-server": "webpack-dev-server",
+    "build": "webpack",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.9.3",
+    "normalize.css": "^8.0.0",
+    "numeral": "^2.0.6",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-icons": "^3.0.5",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-env": "^2.4.1",
+    "babel-loader": "^7.1.5",
+    "babel-preset-react": "^6.24.1",
+    "file-loader": "^1.1.11",
+    "image-webpack-loader": "^4.3.1",
+    "url-loader": "^1.1.0",
+    "webpack": "^4.16.5",
+    "webpack-dev-server": "^3.1.5"
+  }
+}

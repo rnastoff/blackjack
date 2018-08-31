@@ -1,0 +1,152 @@
+.footer {
+  bottom: 0;
+  left: 0;
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  justify-content: space-between;
+  position: fixed;
+  max-width: 100%;
+  padding: 1rem;
+  width: 100%;
+  z-index: 10;
+}
+
+/********** BALANCE BOX **********/
+.footer-balance-box {
+  box-sizing: border-box;
+  width: 14rem;
+}
+.footer-balance-text {
+  background: #111;
+  color: gold;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+.footer-balance-amount {
+  background: rgba(0,0,0, 0.5);
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+
+}
+
+/********** BUTTONS BOX **********/
+.footer-buttons-box {
+  text-align: center;
+}
+.footer-buttons-box > button {
+  background: rgba(0,0,0,0.75);
+  border: none;
+  color: gold;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 3rem 1rem;
+  outline: 0;
+  padding: 2rem;
+  transition: color 0.5s;
+}
+.footer-buttons-box > button:hover {
+  color: #fff;
+  transition: color 0.5s;
+}
+
+.footer-buttons-box > button:disabled {
+  color: #685905;
+}
+
+@media (max-width: 860px) {
+
+}
+
+
+
+/********** BET BOX **********/
+.footer-bet-box {
+  box-sizing: border-box;
+  padding-right: 2rem;
+  width: 14rem;
+}
+.footer-bet-text {
+  background: #111;
+  color: gold;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-bet-amount {
+  background: rgba(0,0,0, 0.5);
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+@media  (max-width: 860px) {
+  .footer {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .footer-balance-box {
+    order: 1;
+    width: 49.5%;
+  }
+  .footer-balance-text {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+  .footer-balance-amount {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+  .footer-buttons-box {
+    display: flex;
+    justify-content: space-between;
+    order: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 98%;
+  }
+  .footer-buttons-box > button {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    padding: 1.5rem 1.5rem;
+  }
+  .footer-bet-box {
+    order: 2;
+    padding-right: 0;
+    width: 49.5%;
+  }
+  .footer-bet-text {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+  .footer-bet-amount {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+}
+
+@media  (max-width: 440px) {
+  .footer-buttons-box > button {
+    font-size: 1.4rem;
+    padding: 1.5rem 1rem;
+  }
+  .footer-balance-text {
+    font-size: 1.4rem;
+  }
+  .footer-balance-amount {
+    font-size: 1.4rem;
+  }
+  .footer-bet-text {
+    font-size: 1.4rem;
+  }
+  .footer-bet-amount {
+    font-size: 1.4rem;
+  }
+}

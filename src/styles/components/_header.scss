@@ -1,0 +1,44 @@
+.header {
+  background: #111;
+  display: flex;
+  font-family: 'Merriweather', serif;
+  justify-content: space-between;
+  margin: 0;
+  position: relative;
+  max-width: 100%;
+  z-index: 2;
+}
+.header-title {
+  color: gold;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+}
+.header-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  outline: none;
+  padding: 1.9rem 2rem 1.9rem 2rem;
+  transition: color 0.5s;
+}
+
+.header-button:hover {
+  color: gold;
+  transition: color 0.5s;
+}
+
+
+
+@media (max-width: 400px) {
+  .header-title {
+    font-size: 1.75rem;
+    padding: 1.75rem 1rem 1.75rem 1rem;
+  }
+  .header-button {
+    font-size: 1.4rem;
+    padding: 1.9rem 1rem 1.9rem 1rem;
+  }
+}
